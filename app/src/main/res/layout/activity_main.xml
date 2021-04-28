@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/myTasksHome"
+        android:id="@+id/myTasksHomeTextView"
         android:layout_width="91dp"
         android:layout_height="32dp"
         android:layout_marginStart="96dp"
