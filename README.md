@@ -23,5 +23,5 @@ The homepage should also contain a button to visit the Settings page, and once t
 //////////////////////////////////////////////////
 ![Day2pg2](screenshots/Day2pg2.png)
 //////////////////////////////////////////////////
-![Error](androidError.png)
+![Error](screenshots/androidError.png)
 
