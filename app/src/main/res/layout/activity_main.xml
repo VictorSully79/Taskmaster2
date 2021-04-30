@@ -43,10 +43,11 @@
         android:id="@+id/myTasksHomeTextView"
         android:layout_width="91dp"
         android:layout_height="32dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="96dp"
         android:text="My Tasks"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

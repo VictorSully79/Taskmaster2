@@ -13,12 +13,13 @@
         android:layout_marginStart="104dp"
         android:layout_marginTop="48dp"
         android:text="Add Task"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTaskTitle"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:backgroundTint="#C8C6C6"
@@ -32,12 +33,12 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:ems="10"
+        android:hint="Description"
         android:inputType="text"
-        android:text="Task Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
