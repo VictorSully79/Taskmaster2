@@ -2,6 +2,7 @@ package com.example.taskmaster2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public static String logTag = "victorSully79.main";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,16 +21,27 @@ public class MainActivity extends AppCompatActivity {
         // Add event Listener
         // attach a callback
         // do stuff in the call back
+        Button allTasksButton = findViewById(R.id.allTasksButton);
+        Button addTaskButton = findViewById(R.id.addTaskButton);
 
-       Button addTaskButton = findViewById(R.id.addTaskButton);
-       addTaskButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Log.i(logTag, "This is a log, addTaskButton has been clicked");
+        ((TextView) findViewById(R.id.myTasksHomeTextView)).setText("My Tasks");
+        addTaskButton.setOnClickListener(view -> {
+            Intent goToAddTaskView = new Intent(MainActivity.this, AddTask.class);
+            // Class coming from and class going too
 
+            startActivity(goToAddTaskView);
+        });
 
-              // ((TextView) findViewById(R.id.myTasksHomeTextView)).setText("My Tasks");
-           }
-       });
+        allTasksButton.setOnClickListener(view -> {
+            Intent goToAllTasksView = new Intent(MainActivity.this, MyTasks.class);
+
+            startActivity(goToAllTasksView);
+        });
     }
 }
+
+
+
+
+
+
