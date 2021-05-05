@@ -2,12 +2,13 @@
 # Task Master Day 1 
 # 26 April 2021
 ## Add Home Page, "Add a Task" page, and "My Tasks" page
-![Task Master Day 1](screenshots/TaskMasterDay1.png)
+![Task Master Day 1](screenshots/labphone1.png)
 =======
 # Task Master Day 1 
 # 26 April 2021
 ## Add Home Page, "Add a Task" page, and "My Tasks" page
-![Task Master Day 1](screenshots/TaskMasterDay1.png)
+![Task Master Day 1](screenshots/labphone2.png)
+![Day 3](screenshots/phone3.png)
 
 #Task Master Day 2
 # 27 April 2021
