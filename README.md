@@ -28,6 +28,7 @@ The homepage should also contain a button to visit the Settings page, and once t
 ### Updated with pushed user name.
 
 ![Day2pg1](screenshots/phone5.png)
+![Update](screenshots/phone6.png)
 //////////////////////////////////////////////////
 ![Day2pg2](screenshots/Day2pg2.png)
 //////////////////////////////////////////////////
