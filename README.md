@@ -26,7 +26,7 @@ The homepage should also contain a button to visit the Settings page, and once t
 ## Daily Notes
 ### Everything was going well until I added a new page and then I kept getting an error that would not run the program.  I am unsure what this is and I have added a screenshot of it for future reference.  
 
-![Day2pg1](screenshots/Day2pg1.png)
+![Day2pg1](screenshots/phone5.png)
 //////////////////////////////////////////////////
 ![Day2pg2](screenshots/Day2pg2.png)
 //////////////////////////////////////////////////
