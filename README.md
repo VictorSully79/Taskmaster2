@@ -33,5 +33,12 @@ The homepage should also contain a button to visit the Settings page, and once t
 ![Day2pg2](screenshots/Day2pg2.png)
 //////////////////////////////////////////////////
 ![Error](screenshots/androidError.png)
+/////////////////////////////////////////////////
 
+# 6 May 2021
+## Daily Notes
+### Updated with Task Detail page and added the 3 tasks to the main screen
+
+![6May21](screenshots/phone7.png)
+![6May21](screenshots/phone8.png)
 >>>>>>> d039e93790296bb8f2621fe184fddfe4f729ab63
