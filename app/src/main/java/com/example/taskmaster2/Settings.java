@@ -19,7 +19,7 @@ public class Settings extends AppCompatActivity {
         SharedPreferences.Editor preferenceEditor = preferences.edit();
 
         findViewById(R.id.userSaveButton).setOnClickListener(v -> {
-            String username = ((TextView) findViewById(R.id.inputNameSettings)).getText().toString();
+            String username = ((TextView) findViewById(R.id.inputSettingsName)).getText().toString();
             preferenceEditor.putString("username", username);
             preferenceEditor.apply();
 

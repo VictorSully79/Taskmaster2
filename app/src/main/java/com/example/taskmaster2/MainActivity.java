@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         if(username != null){
             ((TextView) findViewById(R.id.myTasksHomeTextView)).setText(username + "'s  tasks");
         }
+
+
+
+
+
         // Steps to get button to click
         // Get by ID
         // Add event Listener
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Button allTasksButton = findViewById(R.id.allTasksButton);
         Button addTaskButton = findViewById(R.id.addTaskButton);
         Button settingsButton = findViewById(R.id.settingsButton);
+        Button taskOneMainButton = findViewById(R.id.taskOneMainButton);
+        Button taskTwoMainButton = findViewById(R.id.taskTwoMainButton);
+        Button taskThreeMainButton = findViewById(R.id.taskThreeMainButton);
         addTaskButton.setOnClickListener(view -> {
             Intent goToAddTaskView = new Intent(MainActivity.this, AddTask.class);
             // Class coming from and class going too
@@ -51,6 +59,33 @@ public class MainActivity extends AppCompatActivity {
             Intent goToSettingsView = new Intent(MainActivity.this, Settings.class );
 
             startActivity(goToSettingsView);
+        });
+
+        taskOneMainButton.setOnClickListener(v -> {
+        String task = ((TextView) findViewById(R.id.taskOneMainButton)).getText().toString();
+        preferenceEditor.putString("task", task);
+        preferenceEditor.apply();
+            Intent goToTaskOneView = new Intent(MainActivity.this, TaskDetail.class );
+
+            startActivity(goToTaskOneView);
+        });
+
+        taskTwoMainButton.setOnClickListener(v -> {
+        String task = ((TextView) findViewById(R.id.taskTwoMainButton)).getText().toString();
+        preferenceEditor.putString("task", task);
+        preferenceEditor.apply();
+            Intent goToTaskTwoView = new Intent(MainActivity.this, TaskDetail.class);
+
+            startActivity(goToTaskTwoView);
+        });
+
+        taskThreeMainButton.setOnClickListener(v -> {
+        String task = ((TextView) findViewById(R.id.taskThreeMainButton)).getText().toString();
+        preferenceEditor.putString("task", task);
+        preferenceEditor.apply();
+                Intent goToTaskThreeView = new Intent(MainActivity.this, TaskDetail.class);
+
+            startActivity(goToTaskThreeView);
         });
 
 
