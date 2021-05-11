@@ -11,6 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.amplifyframework.AmplifyException;
+import com.amplifyframework.api.aws.AWSApiPlugin;
+import com.amplifyframework.core.Amplify;
+
 public class MainActivity extends AppCompatActivity {
     public static String logTag = "victorSully79.main";
 
@@ -21,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor preferenceEditor = preferences.edit();
+
+        try {
+            Amplify.addPlugin(new AWSApiPlugin());
+            Amplify.configure(getApplicationContext());
+        }
+        catch (AmplifyException e) {
+            e.printStackTrace();
+        }
+
 
         String username = preferences.getString("username", null);
         if(username != null){
